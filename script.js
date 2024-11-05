@@ -24,7 +24,9 @@
 let parola = prompt("Inserisci una parola");
 
 // funzione per capire se la parola e palindroma 
-
+ function palindroma(parola){
+    return parola === parolaInvertita;
+ }
 // far scegliere all'utente se vuole pari o dispari 
 
 // far scegliere un numero all'utente tra 1 e 5
