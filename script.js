@@ -21,7 +21,7 @@
 
 
 // chiediamo di inserire una parola 
-let parola = prompt("Inserisci una parola");
+let parola = prompt("Inserisci una parola:");
 
 // funzione per capire se la parola e palindroma 
 function palindroma(parola) {
@@ -37,14 +37,18 @@ if (palindroma(parola)) {
 
 // far scegliere all'utente se vuole pari o dispari
 
-let pariDispari = parseInt(prompt("Scegli se pari o dispari:")).toLocaleLowerCase();
-console.log(pariDispari);
+let pariDispari = prompt("Scegli se pari o dispari:").toLocaleLowerCase();
+// console.log(pariDispari);
 
 // far scegliere un numero all'utente tra 1 e 5
-let numeroUtente = prompt("Inserisci un numero da 1 a 5");
+let numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"));
 console.log(numeroUtente);
 
 // generiamo un numero per il computer tra 1 e 5
+
+function numeroRandom(){
+    
+}
 
 // sommiamo i due numeri
 
