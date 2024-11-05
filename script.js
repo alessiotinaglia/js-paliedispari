@@ -24,18 +24,30 @@
 let parola = prompt("Inserisci una parola");
 
 // funzione per capire se la parola e palindroma 
- function palindroma(parola){
+function palindroma(parola) {
+    let parolaInvertita = parola.split('').reverse().join('');
     return parola === parolaInvertita;
- }
-// far scegliere all'utente se vuole pari o dispari 
+}
+
+if (palindroma(parola)) {
+    console.log("La parola è palindroma");
+} else {
+    console.log("La parola non è palindroma");
+}
+
+// far scegliere all'utente se vuole pari o dispari
+
+let pariDispari = prompt("Scegli se pari o dispari:").toLocaleLowerCase();
 
 // far scegliere un numero all'utente tra 1 e 5
 
-// generiamo un numero per il computer tra 1 e 5 
+let numeroUtente = prompt("Inserisci un numero da 1 a 5");
 
-// sommiamo i due numeri 
+// generiamo un numero per il computer tra 1 e 5
 
-// vediamo se la somma e pari o dispari 
+// sommiamo i due numeri
+
+// vediamo se la somma e pari o dispari
 
 // diciamo chi ha vinto 
 
