@@ -19,13 +19,22 @@
 
 // Dichiariamo chi ha vinto.
 
-// Consigli del giorno
 
-// 1. Scriviamo sempre in italiano i passaggi che vogliamo fare
-
-// 2. Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
-
-
+// chiediamo di inserire una parola 
 let parola = prompt("Inserisci una parola");
+
+// funzione per capire se la parola e palindroma 
+
+// far scegliere all'utente se vuole pari o dispari 
+
+// far scegliere un numero all'utente tra 1 e 5
+
+// generiamo un numero per il computer tra 1 e 5 
+
+// sommiamo i due numeri 
+
+// vediamo se la somma e pari o dispari 
+
+// diciamo chi ha vinto 
 
 
