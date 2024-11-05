@@ -37,11 +37,12 @@ if (palindroma(parola)) {
 
 // far scegliere all'utente se vuole pari o dispari
 
-let pariDispari = prompt("Scegli se pari o dispari:").toLocaleLowerCase();
+let pariDispari = parseInt(prompt("Scegli se pari o dispari:")).toLocaleLowerCase();
+console.log(pariDispari);
 
 // far scegliere un numero all'utente tra 1 e 5
-
 let numeroUtente = prompt("Inserisci un numero da 1 a 5");
+console.log(numeroUtente);
 
 // generiamo un numero per il computer tra 1 e 5
 
