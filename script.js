@@ -1,5 +1,4 @@
-"use String"
-
+"use strict"
 
 // Palidroma
 
@@ -21,15 +20,21 @@
 
 
 // chiediamo di inserire una parola 
-let parola = prompt("Inserisci una parola:");
+let word = prompt("Inserisci una parola:");
 
-// funzione per capire se la parola e palindroma 
-function palindroma(parola) {
-    let parolaInvertita = parola.split('').reverse().join('');
-    return parola === parolaInvertita;
+/**
+ * Funzione per capire se la parola e palindroma 
+ * 
+ * @param {string} parola La parola da rovesciare e controllare
+ * 
+ * @returns {boolean} true se e' palindorma, false viceversa
+ */
+function palindroma(word) {
+    let wordInvertita = word.split('').reverse().join('');
+    return word === wordInvertita;
 }
 
-if (palindroma(parola)) {
+if (palindroma(word)) {
     console.log("La parola è palindroma");
 } else {
     console.log("La parola non è palindroma");
@@ -38,39 +43,47 @@ if (palindroma(parola)) {
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
-// Secondo esercizio 
+// Secondo esercizio
 
 // far scegliere all'utente se vuole pari o dispari
-let pariDispari = prompt("Scegli se pari o dispari:").toLocaleLowerCase();
-console.log(pariDispari);
+let evenOdd = prompt("Scegli se pari o dispari:").toLocaleLowerCase();
+console.log(evenOdd);
 
 
 // far scegliere un numero all'utente tra 1 e 5
-let numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"));
-console.log(numeroUtente);
+let username = parseInt(prompt("Inserisci un numero da 1 a 5"));
+console.log(username);
 
 // generiamo un numero per il computer tra 1 e 5
-const numeroMinimo = 1;
-const numeroMassimo = 6;
+const miniNumber = 1; 
 
-const numeroRandomPc = generaNumeroRandom(numeroMinimo,numeroMassimo);
+const maxNumber = 6;
+
+const numeroRandomPc = generaNumeroRandom(miniNumber,maxNumber);
 
 // sommiamo i due numeri
-let somma = numeroUtente + numeroRandomPc;
-console.log("la somma dei due numeri é :" + somma);
+let som = username + numeroRandomPc;
+console.log("la somma dei due numeri é :" + som);
 
-// vediamo se la somma e pari o dispari
-function pariODispari(somma) {
-    return somma % 2 === 0 ? "pari" : "dispari";
+/**
+ * Vediamo se la somma e pari o dispari
+ * 
+ * @param {*} som
+ * 
+ * @returns 
+ */
+function evenOrOdd(som) {
+    return som % 2 === 0 ? "pari" : "dispari";
 }
 
-let risultatoSomma = pariODispari(somma);
-console.log("La somma è: " + risultatoSomma);
+let sommTotal = evenOrOdd(som);
+console.log("La somma è: " + sommTotal);
 
 // diciamo chi ha vinto 
-if (risultatoSomma === pariDispari) {
+if (sommTotal === evenOdd) {
     console.log("Hai vinto!");
 } else {
     console.log("Hai perso!");
 }
+
 
