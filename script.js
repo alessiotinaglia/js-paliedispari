@@ -60,8 +60,17 @@ let somma = numeroUtente + numeroRandomPc;
 console.log("la somma dei due numeri é :" + somma);
 
 // vediamo se la somma e pari o dispari
+function pariODispari(somma) {
+    return somma % 2 === 0 ? "pari" : "dispari";
+}
 
+let risultatoSomma = pariODispari(somma);
+console.log("La somma è: " + risultatoSomma);
 
 // diciamo chi ha vinto 
-
+if (risultatoSomma === pariDispari) {
+    console.log("Hai vinto!");
+} else {
+    console.log("Hai perso!");
+}
 
